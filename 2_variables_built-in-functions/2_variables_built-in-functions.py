@@ -48,7 +48,7 @@ print('Married: ', is_married)
 print('Skills: ', skills)
 print('Number of Skills:', len(skills))                     #list kalo diprint selalu muncul kurung kok []
 print('Person Information: ', person_info)
-print('Number of Person Information:', len(person_info))    #list kalo diprint selalu muncul kurung kok []
+print('Number of Person Information:', len(person_info))    #dict kalo diprint selalu muncul kurung kok {}
 print(type(person_info))                                    #mau liat type datanya apaan
 
 print('\n')
