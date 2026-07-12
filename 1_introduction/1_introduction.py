@@ -7,8 +7,8 @@ print(3 + 4)             # addition(+)
 print(3 - 4)             # subtraction(-)
 print(3 * 4)             # multiplication(*)
 print(3 / 4)             # division(/)
-print(3 ** 4)            # exponential(**)
-print(3 % 4)             # modulus(%)
+print(3 ** 4)            # exponential(**) ---> ini pangkat, alias 3 pangkat 4. jadi 3x3x3x3 = 81
+print(3 % 4)             # modulus(%)  ---> ini nyari modulo, alias sisa pembagian.  
 print(3 // 4)            # Floor division operator(//)
 
 # Write strings on the python interactive shell. The strings are the following
