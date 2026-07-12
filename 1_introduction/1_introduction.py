@@ -17,10 +17,10 @@ print('Indonesia')       #country
 print('I am really enjoying learning Python')
 
 # Check the data types of the following data:
-print(type(10))
-print(type(9.8))
-print(type(3.14))
-print(type(4 - 4j))
-print(type(['Ima', 'Python', 'Indonesia']))
-print(type('Ima'))
+print(type(10))          #int - integer. bilangan
+print(type(9.8))         #float - decimal ato pecahan
+print(type(3.14))        #float - decimal ato pecahan
+print(type(4 - 4j))      #complex - campuran bilangan bulat & imajiner
+print(type(['Ima', 'Python', 'Indonesia']))     #list - isinya multiple items
+print(type('Ima'))       #str - string. huruf
 # %%
