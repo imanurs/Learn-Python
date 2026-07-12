@@ -1,0 +1,132 @@
+source: https://docs.python.org/3/library/functions.html
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+abs(x)					Mengembalikan nilai absolut dari angka. Contoh: abs(-5) → 5
+aiter(async_iterable)			Mengembalikan asynchronous iterator dari async iterable. Versi async dari iter().
+all(iterable)				Mengembalikan True jika semua elemen dalam iterable bernilai True (atau jika kosong). Contoh: all([True, True, True]) → True
+anext(async_iterator)			Versi async dari next(). Mengambil item berikutnya dari async iterator.
+any(iterable)				Mengembalikan True jika minimal satu elemen bernilai True. Contoh: any([False, True, False]) → True
+ascii(object)				Mirip repr(), tapi karakter non-ASCII di-escape. Berguna saat perlu representasi printable.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+bin(integer)				Mengubah integer ke string biner dengan prefix '0b'. Contoh: bin(3) → '0b11'
+bool(object)				Mengubah nilai ke True atau False. Contoh: bool(0) → False, bool(1) → True
+breakpoint()				Memanggil debugger di titik tersebut. Berguna untuk debugging interaktif.
+bytearray(source)			Membuat array byte yang bisa diubah (mutable). Berguna untuk manipulasi data biner.
+bytes(source)				Membuat objek bytes yang tidak bisa diubah (immutable). Versi immutable dari bytearray.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+callable(object)			Mengecek apakah objek bisa dipanggil (callable). Contoh: callable(print) → True
+chr(codepoint)				Mengubah angka Unicode menjadi karakter. Kebalikan dari ord(). Contoh: chr(97) → 'a'
+classmethod()				Decorator untuk mengubah method menjadi class method yang menerima class sebagai argumen pertama.
+compile(source, filename, mode)		Mengompilasi source code menjadi code object yang bisa dieksekusi dengan exec() atau eval().
+complex(real, imag)			Membuat bilangan kompleks. Contoh: complex(1, 2) → (1+2j)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+delattr(object, name)			Menghapus atribut dari objek. Contoh: delattr(obj, 'nama_atribut')
+dict(**kwargs)				Membuat dictionary baru. Contoh: dict(a=1, b=2) → {'a': 1, 'b': 2}
+dir(object)				Mengembalikan list atribut dan method dari objek. Berguna untuk eksplorasi objek.
+divmod(a, b)				Mengembalikan tuple (hasil bagi, sisa bagi). Contoh: divmod(10, 3) → (3, 1)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+enumerate(iterable, start=0)		Mengembalikan enumerate object dengan index dan value. Contoh: enumerate(['a','b']) → (0,'a'), (1,'b')
+eval(source)				Mengevaluasi string sebagai ekspresi Python. Contoh: eval('1 + 2') → 3
+exec(source)				Mengeksekusi kode Python secara dinamis. Lebih powerful dari eval(), bisa jalankan statement.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+filter(function, iterable)		Memfilter elemen iterable berdasarkan fungsi. Contoh: filter(lambda x: x>2, [1,2,3,4]) → [3,4]
+float(x)				Mengubah nilai ke floating-point (desimal). Contoh: float('3.14') → 3.14
+format(value, format_spec)		Mengformat nilai sesuai spesifikasi. Contoh: format(3.14159, '.2f') → '3.14'
+frozenset(iterable)			Membuat set yang tidak bisa diubah (immutable). Berguna sebagai key dictionary.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+getattr(object, name)			Mengambil nilai atribut dari objek. Contoh: getattr(obj, 'nama') sama dengan obj.nama
+globals()				Mengembalikan dictionary yang berisi semua variabel global saat ini.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+hasattr(object, name)			Mengecek apakah objek memiliki atribut tertentu. Contoh: hasattr(obj, 'nama') → True/False
+hash(object)				Mengembalikan nilai hash dari objek. Digunakan untuk perbandingan cepat di dictionary.
+help(object)				Menampilkan dokumentasi bantuan untuk objek/fungsi/modul. Contoh: help(print)
+hex(integer)				Mengubah integer ke string hexadecimal. Contoh: hex(255) → '0xff'
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+id(object)				Mengembalikan identitas unik dari objek (alamat memori). Contoh: id(x)
+input(prompt)				Meminta input dari user. Contoh: nama = input('Nama kamu: ')
+int(x)					Mengubah nilai ke integer. Contoh: int('42') → 42, int(3.9) → 3 (bukan dibulatkan, dipotong)
+isinstance(object, classinfo)		Mengecek apakah objek merupakan instance dari tipe tertentu. Contoh: isinstance(5, int) → True
+issubclass(class, classinfo)		Mengecek apakah sebuah class adalah subclass dari class lain.
+iter(iterable)				Mengembalikan iterator dari objek. Digunakan untuk iterasi manual.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+len(object)				Mengembalikan jumlah item dalam objek. Contoh: len([1,2,3]) → 3, len('hello') → 5
+list(iterable)				Membuat list baru. Contoh: list((1,2,3)) → [1,2,3], list('abc') → ['a','b','c']
+locals()				Mengembalikan dictionary berisi semua variabel lokal saat ini.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+map(function, iterable)			Menerapkan fungsi ke setiap elemen. Contoh: map(str, [1,2,3]) → ['1','2','3']
+max(iterable)				Mengembalikan nilai terbesar. Contoh: max([3,1,4,1,5]) → 5, max('a','z') → 'z'
+memoryview(object)			Membuat memory view dari objek bytes/bytearray untuk akses data biner tanpa copy.
+min(iterable)				Mengembalikan nilai terkecil. Contoh: min([3,1,4,1,5]) → 1
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+next(iterator)				Mengambil item berikutnya dari iterator. Contoh: next(iter([1,2,3])) → 1
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+object()				Base class dari semua class di Python. Setiap class mewarisi dari object.
+oct(integer)				Mengubah integer ke string oktal. Contoh: oct(8) → '0o10'
+open(file, mode='r')			Membuka file dan mengembalikan file object. Mode: 'r' baca, 'w' tulis, 'a' append, 'b' biner.
+ord(character)				Mengubah karakter ke kode Unicode. Kebalikan dari chr(). Contoh: ord('a') → 97
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+pow(base, exp, mod=None)		Menghitung pangkat. Contoh: pow(2,3) → 8. Sama dengan base**exp.
+print(*objects, sep=' ', end='\n')	Mencetak output ke layar. Bisa pakai sep untuk pemisah dan end untuk akhiran.
+property(fget, fset, fdel)		Decorator untuk membuat property attribute dengan getter, setter, dan deleter.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+range(start, stop, step=1)		Membuat urutan angka. Contoh: range(5) → 0,1,2,3,4 | range(1,10,2) → 1,3,5,7,9
+repr(object)				Mengembalikan representasi string dari objek. Berguna untuk debugging.
+reversed(sequence)			Mengembalikan iterator urutan terbalik. Contoh: list(reversed([1,2,3])) → [3,2,1]
+round(number, ndigits=None)		Membulatkan angka. Contoh: round(3.14159, 2) → 3.14, round(3.5) → 4
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+set(iterable)				Membuat set (kumpulan unik tanpa duplikat). Contoh: set([1,2,2,3]) → {1,2,3}
+setattr(object, name, value)		Mengatur nilai atribut objek. Contoh: setattr(obj, 'nama', 'Ima') sama dengan obj.nama = 'Ima'
+slice(start, stop, step)		Membuat objek slice untuk pemotongan sequence. Contoh: slice(1,5,2)
+sorted(iterable, key=None, reverse=False)	Mengurutkan iterable dan mengembalikan list baru. Contoh: sorted([3,1,2]) → [1,2,3]
+staticmethod()					Decorator untuk mengubah method menjadi static method yang tidak butuh self/cls.
+str(object)					Mengubah nilai ke string. Contoh: str(42) → '42', str(True) → 'True'
+sum(iterable, start=0)				Menjumlahkan semua elemen. Contoh: sum([1,2,3,4]) → 10, sum([1,2,3], 10) → 16
+super()						Mengembalikan proxy ke parent class. Digunakan dalam inheritance untuk memanggil method parent.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+tuple(iterable)				Membuat tuple (seperti list tapi immutable). Contoh: tuple([1,2,3]) → (1,2,3)
+type(object)				Mengembalikan tipe dari objek. Contoh: type(42) → <class 'int'>, type('hi') → <class 'str'>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+vars(object)				Mengembalikan __dict__ dari objek (atribut-atributnya). Tanpa argumen, sama dengan locals().
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+zip(*iterables)				Menggabungkan beberapa iterable menjadi iterator of tuples. Contoh: zip([1,2],[3,4]) → (1,3),(2,4)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+__import__(name)			Fungsi low-level yang dipanggil oleh statement import. Biasanya pakai importlib.import_module() saja.
