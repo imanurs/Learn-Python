@@ -6,6 +6,10 @@ from PIL import Image
 img = Image.open(r'D:\TECH\VS Code Projects\(Learn) Python\Learning Python\2_variables_built-in-functions\built-in-functions.jpg')
 img.show()
 
+
+#----------------------------------------------------------------------------------------------------------------
+
+
 #Variables in Python
 #ini udah masuk ke variable. jadi nama variablenya tuh 'first_name', 'country', etc.. 
 #datanya 'Ima', 'Indonesia' etc.. kalo datanya ganti, ntar pas dishow/manggil variablenya, yg muncul juga ganti
@@ -25,6 +29,8 @@ person_info = {                                                  #dict - diction
     'country': 'Indonesia',
     'city': 'Bandung'
 }
+
+#----------------------------------------------------------------------------------------------------------------
 
 
 #ini buat ngeprint variables di atas tadi dan ngeprint data variablenya
@@ -51,6 +57,10 @@ print('Person Information: ', person_info)
 print('Number of Person Information:', len(person_info))    #dict kalo diprint selalu muncul kurung kok {}
 print(type(person_info))                                    #mau liat type datanya apaan
 
+
+#----------------------------------------------------------------------------------------------------------------
+
+
 print('\n')
 print('Declaring multiple variables in one line \n')
 
@@ -66,4 +76,17 @@ print('Married: ', is_married)
 print('\n')
 print('python tuh sequential. di awal gw declare value country indo, trus diakhir gw declare lagi norway')
 print('yg di awal tetep keprint (sebelum declare value baru), dan yg value baru juga keprint abis declaration baru')
- # %%
+
+
+#----------------------------------------------------------------------------------------------------------------
+
+
+print('\n')
+print('Getting user input using the input() built-in function \n')
+
+first_name = input('What is your name: ')               #pake function input(). tapi kudu ngedeclare variable dulu
+age = input('How old are you? ')
+
+print(first_name)
+print(age)
+# %%
