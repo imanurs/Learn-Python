@@ -14,7 +14,7 @@ print(3 // 4)            # floor division operator(//) ---> ini nyari pembagian 
 # Write strings on the python interactive shell. The strings are the following
 print('Ima')             #name
 print('Indonesia')       #country
-print('I am really enjoying learning Python.')
+print('I am really enjoying learning Python')
 
 # Check the data types of the following data:
 print(type(10))
