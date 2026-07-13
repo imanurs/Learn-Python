@@ -1,5 +1,5 @@
 # %%
-print('Excercise 1')
+print('Exercise 1')
 # Check the python version you are using (Python 3.14.4)
 
 print('Open the python interactive shell and do the following operations. The operands are 3 and 4')
@@ -42,7 +42,7 @@ print(type(zip([1,2],[3,4])))                   #zip - built in buat ngegabungin
 print('\nExercise 3')
 print('Find an Euclidean distance between (2, 3) and (10, 8) \n')
 print('note: euclidean distance tuh jarak antar titik. misal kalo di segitiga siku-siku, nyari jarak antara 2 titik yg di sisi miringnya, itu pake pythagoras gt')
-print('nah karena angka yg diketahui formatnya (x1,y1) dan (x2, y2), berarti pake rumus akar(x1-x2)² + (y1-y2)²)')
+print('nah karena angka yg diketahui formatnya (x1,y1) dan (x2, y2), berarti pake rumus akar((x1-x2)^2 + (y1-y2)^2)')
 print('karena ini operasi matematika, bisa pake lib bawaan python yaitu math atau tanpa library alias pake basic math operation')
 
 # pake library math
