@@ -1,8 +1,8 @@
 # %%
-# Excercise 1
+print('Excercise 1')
 # Check the python version you are using (Python 3.14.4)
 
-# Open the python interactive shell and do the following operations. The operands are 3 and 4
+print('Open the python interactive shell and do the following operations. The operands are 3 and 4')
 print(3 + 4)             # addition(+)
 print(3 - 4)             # subtraction(-)
 print(3 * 4)             # multiplication(*)
@@ -16,8 +16,8 @@ print('Ima')             #name
 print('Indonesia')       #country
 print('I am really enjoying learning Python')
 
-# Exercise 2
-print('\n Write an example for different Python data types such as Number(Integer, Float, Complex), String, Boolean, List, Tuple, Set and Dictionary.\n')
+print('\nExercise 2')
+print('Write an example for different Python data types such as Number(Integer, Float, Complex), String, Boolean, List, Tuple, Set and Dictionary.\n')
 # Check the data types of the following data:
 print(type(10))                                 #int - integer. bilangan
 print(type(9.8))                                #float - decimal ato pecahan
@@ -31,5 +31,25 @@ print(type(('Earth', 'Jupiter', 'Neptune')))    #tuple - kaya list tapi ngga bis
 print(type({1.32, 4, 2.54, 3.14}))              #set - collection of data kaya dict sama list, tapi ini ngga berurutan
 print(type(zip([1,2],[3,4])))                   #zip - built in buat ngegabungin bbrp list jadi pasangan. pasangannya berdasarkan urutan index
 
-# Exercise 2
-print('\n Find an Euclidean distance between (2, 3) and (10, 8)')
+print('\nExercise 3')
+print('Find an Euclidean distance between (2, 3) and (10, 8) \n')
+print('note: euclidean distance tuh jarak antar titik. misal kalo di segitiga siku-siku, nyari jarak antara 2 titik yg di sisi miringnya, itu pake pythagoras gt')
+print('nah karena angka yg diketahui formatnya (x1,y1) dan (x2, y2), berarti pake rumus akar(x1-x2)² + (y1-y2)²)')
+print('karena ini operasi matematika, bisa pake lib bawaan python yaitu math atau tanpa library alias pake basic math operation')
+
+# pake library math
+print('\nPake library math (Liat codenya)')
+import math
+
+x1, y1 = 2, 3
+x2, y2 = 10, 8
+
+distance = math.sqrt((x1-x2)**2 + (y1-y2)**2)
+print(distance)
+
+# pake basic math operation tanpa library
+print('\nNgga pak library math (Liat codenya)')
+
+distance = ((x1-x2)**2 + (y1-y2)**2)**0.5
+print(distance)
+# %%
