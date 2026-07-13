@@ -16,6 +16,10 @@ print('Ima')             #name
 print('Indonesia')       #country
 print('I am really enjoying learning Python')
 
+
+#----------------------------------------------------------------------------------------------------------------
+
+
 print('\nExercise 2')
 print('Write an example for different Python data types such as Number(Integer, Float, Complex), String, Boolean, List, Tuple, Set and Dictionary.\n')
 # Check the data types of the following data:
@@ -30,6 +34,10 @@ print(type({'name':'Ima', 'hobby':'Drawing'}))  #dict - dictionary
 print(type(('Earth', 'Jupiter', 'Neptune')))    #tuple - kaya list tapi ngga bisa diubah. cocok buat data yg udah pakem/fixed
 print(type({1.32, 4, 2.54, 3.14}))              #set - collection of data kaya dict sama list, tapi ini ngga berurutan
 print(type(zip([1,2],[3,4])))                   #zip - built in buat ngegabungin bbrp list jadi pasangan. pasangannya berdasarkan urutan index
+
+
+#----------------------------------------------------------------------------------------------------------------
+
 
 print('\nExercise 3')
 print('Find an Euclidean distance between (2, 3) and (10, 8) \n')
